@@ -4,10 +4,11 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 class KoneksiDatabase {
+    public $conn;
     private $host     = "localhost";
     private $user     = "root";
     private $password = "";
-    private $database = "";
+    private $database = "db_lomo";
 
     public function __construct() {
         $this->membukaKoneksi();
