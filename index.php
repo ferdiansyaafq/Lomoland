@@ -1,4 +1,5 @@
 <?php
+kirim-tresia
 // Root landing page — redirect langsung ke customer atau pilih role
 ?>
 <!DOCTYPE html>
@@ -126,3 +127,15 @@
 </div>
 </body>
 </html>
+=======
+require_once __DIR__ . '/config/config.php';
+
+// Fokus penuh ke Admin Lomoland
+if (isset($_SESSION['user'])) {
+    header("Location: admin/data_produk.php");
+    exit;
+}
+
+header("Location: admin/login.php");
+exit;
+main

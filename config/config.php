@@ -4,6 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 class KoneksiDatabase {
+    public $conn;
     private $host     = "localhost";
     private $user     = "root";
     private $password = "";
