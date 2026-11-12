@@ -7,7 +7,7 @@ class KoneksiDatabase {
     private $host     = "localhost";
     private $user     = "root";
     private $password = "";
-    private $database = "";
+    private $database = "db_lomo";
 
     public function __construct() {
         $this->membukaKoneksi();
