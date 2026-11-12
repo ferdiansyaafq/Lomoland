@@ -21,9 +21,10 @@ Lomoland merupakan sistem e-commerce berbasis web yang digunakan untuk mempermud
 
 ## Persiapan
 1. Clone repository.
-2. Siapkan web server dan database lokal.
-3. Buat database sesuai skrip di folder database.
-4. Sesuaikan konfigurasi database lokal.
+2. Jalankan Apache dan MySQL melalui Laragon.
+3. Impor `database/lomoland.sql` ke MySQL, misalnya melalui tab **Import** di `http://localhost/phpmyadmin`. Skrip tersebut akan membuat database `db_lomo`, tabel, dan data contoh.
+   - Alternatif melalui terminal dari direktori repository: `mysql -u root < database\lomoland.sql`
+4. Pastikan pengaturan host, username, password, dan nama database pada `config/config.php` sesuai dengan MySQL lokal. Nilai bawaan menggunakan `localhost`, user `root`, password kosong, dan database `db_lomo`.
 
 ## Catatan
 Petunjuk instalasi dan penggunaan akan diperbarui sesuai perkembangan proyek.
